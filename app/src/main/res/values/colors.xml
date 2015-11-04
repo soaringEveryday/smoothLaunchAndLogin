@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+
+    <!-- common -->
+    <color name="white">#ffffff</color>
+    <color name="solid_white">#ffffff</color>
+    <color name="cadet_blue">#A9B3C0</color>
+    <color name="solid_red">#f00</color>
+    <color name="solid_blue">#0000ff</color>
+    <color name="solid_green">#f0f0</color>
+    <color name="solid_yellow">#ffffff00</color>
+    <color name="solid_gray">#ffFFFF</color>
+    <color name="goods_edit_delete_color">#F9FAFC</color>
+    <color name="tip_back_color">#323A45</color>
+
+    <color name="text_normal_color">#818181</color>
+    <color name="clear_shop">#C4C4C4</color>
+    <color name="input_hint">#C7C7C7</color>
+    <color name="bar_normal_color">#666</color>
+    <color name="manu_input_color">#686868</color>
+
+    <!-- window -->
+    <color name="ColorPrimary">#eaedf1</color>
+    <color name="ColorPrimaryDark">#292728</color>
+    <color name="ColorAccent">#f9fafc</color>
+    <!--<color nameUp="ColorAccent">#ffc63c</color>-->
+
+    <color name="window_background">#a8a8a9</color>
+    <color name="text_button_login">#FFFFFF</color>
+    <color name="text_button_order_search">#FFF5F5F5</color>
+    <color name="text_hint_color">#a8a8a9</color>
+    <color name="transparent">#00000000</color>
+    <color name="bombay">#AEB0B4</color>
+</resources>
