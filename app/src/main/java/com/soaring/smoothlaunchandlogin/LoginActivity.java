@@ -1,6 +1,7 @@
 package com.soaring.smoothlaunchandlogin;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
@@ -128,8 +129,8 @@ public class LoginActivity extends AppCompatActivity {
     @OnClick(R.id.btn_login)
     public void tryLogin(View view) {
 
-//        enterMainActivityWithAnim();
-        startLoginRequestData();
+        enterMainActivityWithAnim();
+//        startLoginRequestData();
     }
 
     private Context mContext;
@@ -216,7 +217,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void enterMainActivityWithAnim() {
-//        startActivity(new Intent(getApplicationContext(), DesktopActivity.class));
+        startActivity(new Intent(getApplicationContext(), DesktopActivity.class));
         overridePendingTransition(0, 0);
     }
 

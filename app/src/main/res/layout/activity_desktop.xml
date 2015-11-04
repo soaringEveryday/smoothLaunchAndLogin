@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_height"
+        android:layout_alignParentTop="true"
+        android:background="#303d45">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/desktop_operator"
+                    android:textColor="#9babb8"
+                    android:textSize="@dimen/desktop_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_operator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="张三"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/desktop_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/desktop_job"
+                    android:textColor="#9babb8"
+                    android:textSize="@dimen/desktop_text_size" />
+
+                <TextView
+                    android:id="@+id/iv_job"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="收银员"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/desktop_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/desktop_date"
+                    android:textColor="#9babb8"
+                    android:textSize="@dimen/desktop_text_size" />
+
+                <TextView
+                    android:id="@+id/iv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="2015-09-29"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/desktop_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/desktop_line_height"
+        android:layout_below="@id/top"
+        android:background="@drawable/desktop_top_line" />
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/line"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="@dimen/desktop_item_width"
+                android:layout_height="@dimen/desktop_item_height"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/desktop_item_margin">
+
+                <ImageButton
+                    android:id="@+id/btn_cashier"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/desk_item_selector_cashier"
+                    android:contentDescription="@string/desktop_item_cashier"
+                    android:paddingBottom="@dimen/desktop_item_padding_bottom"
+                    android:scaleType="center"
+                    android:src="@drawable/desktop_icon_cashier" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="@dimen/desktop_item_label_margin_bottom"
+                    android:gravity="center"
+                    android:text="@string/desktop_item_cashier"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/desktop_text_size" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="@dimen/desktop_item_width"
+                android:layout_height="@dimen/desktop_item_height"
+                android:layout_gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btn_goods"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/desk_item_selector_goods"
+                    android:contentDescription="@string/desktop_goods_mgr"
+                    android:paddingBottom="@dimen/desktop_item_padding_bottom"
+                    android:scaleType="center"
+                    android:src="@drawable/desktop_icon_goods" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="@dimen/desktop_item_label_margin_bottom"
+                    android:gravity="center"
+                    android:text="@string/desktop_goods_mgr"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/desktop_text_size" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_purchase"
+                android:layout_width="@dimen/desktop_item_width"
+                android:layout_height="@dimen/desktop_item_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/desktop_item_margin">
+
+                <ImageButton
+                    android:id="@+id/btn_purchase"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/desk_item_selector_purchase"
+                    android:contentDescription="@string/desktop_purchase"
+                    android:paddingBottom="@dimen/desktop_item_padding_bottom"
+                    android:scaleType="center"
+                    android:src="@drawable/desktop_icon_purchase" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="@dimen/desktop_item_label_margin_bottom"
+                    android:gravity="center"
+                    android:text="@string/desktop_purchase"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/desktop_text_size" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="@dimen/desktop_item_width"
+                android:layout_height="@dimen/desktop_item_height"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/desktop_item_margin">
+
+                <ImageButton
+                    android:id="@+id/btn_reports"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/desk_item_selector_reports"
+                    android:contentDescription="@string/desktop_report"
+                    android:paddingBottom="@dimen/desktop_item_padding_bottom"
+                    android:scaleType="center"
+                    android:src="@drawable/desktop_icon_reports" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="@dimen/desktop_item_label_margin_bottom"
+                    android:gravity="center"
+                    android:text="@string/desktop_report"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/desktop_text_size" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="@dimen/desktop_item_width"
+                android:layout_height="@dimen/desktop_item_height"
+                android:layout_gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btn_member"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/desk_item_selector_member"
+                    android:contentDescription="@string/desktop_member"
+                    android:scaleType="center"
+                    android:paddingBottom="@dimen/desktop_item_padding_bottom"
+                    android:src="@drawable/desktop_icon_member" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="@dimen/desktop_item_label_margin_bottom"
+                    android:gravity="center"
+                    android:text="@string/desktop_member"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/desktop_text_size" />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="@dimen/desktop_item_width"
+                android:layout_height="@dimen/desktop_item_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/desktop_item_margin">
+
+                <ImageButton
+                    android:id="@+id/btn_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/desk_item_selector_settings"
+                    android:contentDescription="@string/desktop_settings"
+                    android:scaleType="center"
+                    android:paddingBottom="@dimen/desktop_item_padding_bottom"
+                    android:src="@drawable/desktop_icon_settings" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="@dimen/desktop_item_label_margin_bottom"
+                    android:gravity="center"
+                    android:text="@string/desktop_settings"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/desktop_text_size" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

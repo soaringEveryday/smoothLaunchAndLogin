@@ -21,4 +21,17 @@
     <dimen name="logo_margin">20dp</dimen>
     <dimen name="logo_width">229dp</dimen>
     <dimen name="logo_height">206dp</dimen>
+
+    <dimen name="tab_height">90dp</dimen>
+
+
+    <!-- 桌面 -->
+    <dimen name="desktop_text_size">25sp</dimen>
+    <dimen name="desktop_line_height">6dp</dimen>
+    <dimen name="desktop_item_width">250dp</dimen>
+    <dimen name="desktop_item_height">190dp</dimen>
+    <dimen name="desktop_item_margin">135dp</dimen>
+    <dimen name="desktop_item_padding_bottom">30dp</dimen>
+    <dimen name="desktop_item_label_margin_bottom">15dp</dimen>
+
 </resources>
