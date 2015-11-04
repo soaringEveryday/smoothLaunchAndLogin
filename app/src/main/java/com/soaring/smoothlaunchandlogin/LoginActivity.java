@@ -140,7 +140,6 @@ public class LoginActivity extends AppCompatActivity {
      */
     private void startLoginRequestData() {
         String username = mInputNickName.getText().toString().trim();
-        String empName = mInputEmpName.getText().toString().trim();
         String password = mInputPwd.getText().toString();
 
 

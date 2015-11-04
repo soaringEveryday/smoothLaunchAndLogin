@@ -118,7 +118,7 @@ public class DesktopActivity extends AppCompatActivity implements View.OnClickLi
     }
 
     private String getFormattedPendingTime(Long time) {
-        String returnStr = "";
+        String returnStr;
         String TIME_FORMAT = "yyyy-MM-dd";
         SimpleDateFormat sdf = new SimpleDateFormat(TIME_FORMAT);
         Date date = new Date(time);
